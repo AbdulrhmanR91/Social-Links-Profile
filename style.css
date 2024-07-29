@@ -1,0 +1,108 @@
+@font-face {
+    font-family: inter;
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+    font-family: inter;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 366px;
+    height: 593px;
+    border-style: solid;
+    background-color:hsl(0, 0%, 12%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; 
+    position:fixed; 
+    box-sizing: border-box;
+
+}
+
+#myPhoto{
+    width: 93px;
+    height: 95px;
+    border-radius: 50px;
+    margin: auto auto 450px auto;
+    position: fixed;
+}
+
+
+
+.name{
+    position: fixed;
+    color: white;
+    font-size: 20px;
+    margin: auto auto 300px auto;
+}
+
+.Address{
+    position: fixed;
+    color:  hsl(75, 94%, 57%);
+    font-size: 12px;
+    margin: auto auto 250px auto;
+}
+
+.specialization{
+    position: fixed;
+    color: white;
+    font-size: 15px;
+    margin: auto auto 170px;
+}
+.Links{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 200px auto auto auto;
+    
+}
+.Links button{
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    border: none;
+    width: 294px;
+    height: 45px;
+    border-radius: 10px;
+    cursor:pointer;
+    font-weight: bold;
+    
+    
+}
+
+
+
+button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color:hsl(0, 0%, 12%);
+    
+}
+
+
+@media screen and (max-width: 375px) {
+    .container{
+      flex-direction: column;
+    }
+
+    .name,.Address,.Links,.specialization{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:376px) and (max-width:1440px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
